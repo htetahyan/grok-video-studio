@@ -1,0 +1,6 @@
+# Optional Python extras (the core CLI is stdlib-only + ffmpeg).
+# Pins are what was verified on the shared box (Nov 2026).
+faster-whisper==1.2.1
+av==15.1.0          # faster-whisper 1.2.1 breaks with PyAV 16+/19
+piper-tts==1.8.0    # offline TTS, used only for the synthetic demo voice line
+pillow>=10

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Launcher: runs the framewright CLI with the best available Python.
+set -euo pipefail
+REPO="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/.." && pwd)"
+STUDIO="${FW_STUDIO:-$(dirname "$REPO")}"
+for cand in "${FW_VENV:-}" "$REPO/.venv" "$STUDIO/.venv"; do
+  if [[ -n "$cand" && -x "$cand/bin/python" ]]; then PY="$cand/bin/python"; break; fi
+done
+PY="${PY:-python3}"
+export PYTHONPATH="$REPO${PYTHONPATH:+:$PYTHONPATH}"
+exec "$PY" -m framewright "$@"

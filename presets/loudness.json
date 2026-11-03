@@ -1,0 +1,22 @@
+{
+  "web-social": {
+    "label": "Streaming & social (YouTube/Instagram/TikTok/Spotify-style normalization)",
+    "integrated": -14.0, "true_peak": -1.0, "lra": 11.0, "tolerance_lu": 1.0
+  },
+  "podcast-voice": {
+    "label": "Spoken-word / podcast platforms",
+    "integrated": -16.0, "true_peak": -1.0, "lra": 9.0, "tolerance_lu": 1.0
+  },
+  "broadcast-r128": {
+    "label": "EBU R128 broadcast (Europe)",
+    "integrated": -23.0, "true_peak": -1.0, "lra": 15.0, "tolerance_lu": 0.5
+  },
+  "broadcast-a85": {
+    "label": "ATSC A/85 broadcast (US)",
+    "integrated": -24.0, "true_peak": -2.0, "lra": 15.0, "tolerance_lu": 2.0
+  },
+  "cinema-quiet": {
+    "label": "Festival/theatrical screener, dynamic mix",
+    "integrated": -20.0, "true_peak": -2.0, "lra": 18.0, "tolerance_lu": 1.0
+  }
+}

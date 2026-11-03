@@ -1,0 +1,41 @@
+# Environments & caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+models/
+*.onnx
+*.bin
+
+# Productions are local working folders; only the README is tracked
+productions/*
+!productions/README.md
+
+# Media, renders and evidence never go in git
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.mxf
+*.avi
+*.m4a
+*.wav
+*.aif
+*.aiff
+*.flac
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.exr
+*.dpx
+!docs/img/*.png
+
+# Local secrets / OS noise
+.env
+.env.*
+*.lock
+.DS_Store
+*.tmp

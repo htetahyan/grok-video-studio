@@ -1,0 +1,27 @@
+{
+  "master-16x9": {
+    "label": "Landscape master (YouTube, web, client review)",
+    "width": 1920, "height": 1080, "fit": "cover",
+    "crf": 18, "x264_preset": "slow", "max_fps": 60,
+    "audio_bitrate": "320k", "caption_style": "lower-band", "loudness": "web-social"
+  },
+  "reel-9x16": {
+    "label": "Vertical story reel (Reels, Shorts, TikTok)",
+    "width": 1080, "height": 1920, "fit": "blur-pad",
+    "crf": 20, "x264_preset": "slow", "max_fps": 60,
+    "audio_bitrate": "256k", "caption_style": "reel-center", "loudness": "web-social"
+  },
+  "square-1x1": {
+    "label": "Square feed post",
+    "width": 1080, "height": 1080, "fit": "cover",
+    "crf": 20, "x264_preset": "slow", "max_fps": 60,
+    "audio_bitrate": "256k", "caption_style": "lower-band", "loudness": "web-social"
+  },
+  "review-720p": {
+    "label": "Light review proxy with burned timecode (never a deliverable)",
+    "width": 1280, "height": 720, "fit": "fit-pad",
+    "crf": 26, "x264_preset": "veryfast", "max_fps": 30,
+    "audio_bitrate": "160k", "caption_style": "lower-band", "loudness": "web-social",
+    "timecode": true
+  }
+}
